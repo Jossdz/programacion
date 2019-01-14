@@ -1,0 +1,236 @@
+export { default as theme } from './theme'
+
+import {Image, Head, Appear} from 'mdx-deck'
+import { CodeSurfer } from 'mdx-deck-code-surfer'
+
+
+import {Layout, Split} from './src'
+import theme from './theme'
+import Ironhack from './theme/Ironhack.js'
+
+<Head>
+  <title>Aprende a programar</title>
+  <meta name="description" content="Hay muchos tabúes alrededor de la programación, el desarrollo y las tecnologías. Por ello es que nos interesa romper con esta percepción incorrecta sobre la programación: es algo complejo y que solo la gente prodigio puede realizar. La programación es para todos."/>
+  <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/Y24Vs84Q/Logo.png"/>
+  <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/Y24Vs84Q/Logo.png"/>
+</Head>
+
+# Aprende a programar
+
+<img src='https://i.postimg.cc/dVXT94gY/ironhack-miny.png' alt='ironhack_logo' width='150'/>
+<br/>
+<small>- Jossdz -</small>
+
+---
+export default Layout
+
+## Antes de empezar con la programación
+
+* Es compleja, pero no imposible.
+* Requiere dedicación y receptividad.
+* Entender los conceptos antes de escribir código.
+* Inglés, no indispensable pero muy útil.
+---
+export default Layout
+
+## ¿Qué es la programación?
+
+La manipulación de datos para resolver una problemática.
+
+---
+export default Layout
+
+## ¿Qué es un dato?
+
+<ul>
+<Appear>
+  <li>1</li>
+  <li>verdadero</li>
+  <li>'a'</li>
+  <li>[1,2,3]</li>
+  <li>{'{'}nombre: joss{'}'}</li>
+</Appear>
+</ul>
+
+---
+export default Layout
+
+## ¿Qué es la información?
+
+* 20 asistentes
+* {administrador: verdadero}
+* [noticia, noticia, noticia]
+
+---
+export default Split
+
+<div>
+  <h2>¿Qué hace un programador?</h2>
+  <small>Resolver un problema (concódigo), manipulando la información de la que dispone.</small>
+</div>
+<div>
+  <h2>¿Quién debería ser programador?</h2>
+  <Appear>
+    <strong> <h2 style={{color: theme.colors.strong}}>->Todos</h2></strong>
+    <p>...quizá</p>
+  </Appear>
+</div>
+
+---
+
+<iframe src="https://www.openprocessing.org/sketch/494102/embed/" width="900" height="601"></iframe>
+
+---
+
+<iframe width="900" height="515" src="https://www.youtube.com/embed/a1RxpJkvqpY?start=712" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+<img src='https://i.postimg.cc/c4GnFwfn/Captura-de-pantalla-2019-01-09-a-la-s-21-46-13.png' alt='yana_img' width='100%'/>
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EGgdCryC8Uo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+en fin... hay mucho por hacer para todos.
+
+---
+export default Layout
+
+# Empecemos con la programación
+
+---
+export default Layout
+
+<CodeSurfer
+  code={require("!raw-loader!./assets/variables.js")}
+  lang="javascript"
+  title="Variables"
+  theme={Ironhack}
+  showNumbers={false}
+  dark={false}
+  steps={[
+    {notes: '¿Recuerdan esto de la secundaria?'},
+    {tokens: {1:[3]}, notes: 'este es el operador de asignación principal'},
+    {tokens: { 1: [5]}, notes: 'el valor 4'},
+    {tokens: { 1: [2]}, notes: 'se asigna a la variable x'},
+    {tokens: { 2: [5]}, notes: 'el valor 3'},
+    {tokens: { 2: [2]}, notes: 'se asigna a la variable y'},
+    {tokens: { 3: [4,5,6,7]}, notes: 'el valor de x - y'},
+    {lines: [3], notes: 'se asigna a la variable result'},
+  ]}
+/>
+
+---
+export default Layout
+
+<CodeSurfer
+  code={require("!raw-loader!./assets/datos.js")}
+  lang="jsx"
+  title="Tipos de datos"
+  theme={Ironhack}
+  showNumbers={false}
+  dark={false}
+  steps={[
+    {notes: 'Diferentes tipos y usos'},
+    {tokens: {1:[1,2,4]}, notes: 'verdadero o falso'},
+    {tokens: {2:[2,3,5]}, notes: 'cualquier número'},
+    {tokens: {3:[2,3,5]}, notes: 'texto o algún caractér'},
+    {tokens: {5:[2,3,5,24]}, notes: 'colecciones de datos'},
+    {tokens: {5:[6]}, notes: 'booleanos'},
+    {tokens: {5:[9]}, notes: 'cadenas (Strings)'},
+    {tokens: {5:[12,15]}, notes: 'numeros'},
+    {tokens: {5:[18,19,20,22,23]}, notes: 'otros arreglos'},
+    {lines: [5], notes: 'podemos acceder a cualquira con la notación nombre[i]'},
+    {lines: [5], notes: 'donde i es el índice del elemento, empezando por 0'},
+    {range: [6,10], notes: 'objetos'},
+    {notes: 'entre otros tipos de datos más...'}
+  ]}
+/>
+
+---
+export default Layout
+
+<CodeSurfer 
+  code={require("!raw-loader!./assets/console.js")}
+  lang="js"
+  theme={Ironhack}
+  showNumbers={false}
+  dark={false}
+  title='Mostrar código en la consola'
+  steps={[
+    {notes: 'imprimir un dato o una variable'},
+    {tokens: {1: [4]}, notes:'esto es un comentario, también se usa // para toda una linea'}
+  ]}
+/>
+---
+export default Layout
+
+<CodeSurfer
+  code={require("!raw-loader!./assets/logicos.js")}
+  lang="js"
+  theme={Ironhack}
+  showNumbers={false}
+  dark={false}
+  title='Operadores lógicos'
+/>
+---
+export default Layout
+
+<CodeSurfer
+  code={require("!raw-loader!./assets/matematicos.js")}
+  lang="js"
+  theme={Ironhack}
+  showNumbers={false}
+  dark={false}
+  title='Operadores Matemáticos'
+  steps={[
+    {lines: [1], notes: 'adición'},
+    {lines: [2], notes: 'sustracción'},
+    {lines: [3], notes: 'multiplicación'},
+    {lines: [4], notes: 'módulo'},
+    {lines: [5], notes: 'división'},
+    {lines: [6], notes: 'exponencial'}
+  ]}
+/>
+
+---
+export default Layout
+
+<CodeSurfer
+  code={require("!raw-loader!./assets/condicionales.js")}
+  lang="js"
+  theme={Ironhack}
+  showNumbers={false}
+  dark={false}
+  title='Estructuras condicionales'
+  steps={[
+    {range: [1, 5],notes: 'con ellas podemos comparar valores'},
+    {range: [7,13], notes: 'Usualmente las ocupamos en estructuras condicionales'},
+    {range: [7,8], notes: 'ejecutamos algo en caso de éxito'},
+    {range: [9,10], notes: 'ejecutamos otra cosa, con otra condición' },
+    {range: [11,13], notes: 'o ejecutamos algo en caso que ninguna se cumpla.'}
+  ]}
+/>
+---
+export default Layout
+
+![problema](https://i.postimg.cc/4X7FRFfz/problemas-1.png)
+
+---
+export default Layout
+
+<CodeSurfer 
+  code={require("!raw-loader!./assets/stickers.js")}
+  lang="js"
+  theme={Ironhack}
+  showNumbers={false}
+  dark={false}
+  title='Repartir stickers'
+  steps={[
+    {lines:[1], notes: 'Tengo una cantidad de stickers'},
+    {lines:[2], notes: 'y tendré una cantidad de asistentes'},
+    {range: [3,7], notes: 'Creamos la lista con cada asistente'},
+    {lines:[9], notes: 'Podemos saber cuantos asistentes hay con la longitud de la lista'}
+  ]}
+/>
